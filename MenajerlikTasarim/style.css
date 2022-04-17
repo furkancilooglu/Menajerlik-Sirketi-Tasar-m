@@ -1,0 +1,294 @@
+.container{
+display:grid
+}
+.container .ustbar{
+width: 100%; 
+height: 120px;
+background-color:#95c11f;
+text-align: center;
+}
+.container .ustbar .rogon{
+    width: 220px;
+    height: 170px;   
+}
+.container .menubar{
+    width:100%;
+    height: 40px;
+    background-color: #4b4b4b;
+    display:flex;
+    text-align: center;
+    
+}
+.container .menubar .panelLeft{
+    color:white;
+    font-family:Arial;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 80px;
+    margin-top: 5px;
+    margin-left: 15px;
+    
+
+
+
+}
+
+
+a.futbolcuVeriler:link{
+    color:black;
+}   
+
+a:link{
+    color:white;
+    text-decoration: none;
+
+}
+a:visited{ color:white; 
+    text-decoration:none; }
+
+
+
+
+
+.container .menubar .panelRight{
+    color:white;
+    font-family:Arial;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 80px;
+    
+}
+.container .content{
+    display:flex;
+    background-color: #d5fec6;
+    width: 100%;
+    height: 78vh;
+}
+.container .content .solBar{
+    margin-top:5px;
+}
+.container .content .solBar .kutu{
+    width: 350px;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    border-style: solid;
+    border-radius: 10px;
+    background-color:white;
+
+}
+.container .content .solBar .kutu .kutuIc .sembol .sembolImg{
+    width: 100px;
+    height: 100px;
+}
+.container .content .solBar .kutu .kutuIc{
+    display: flex;
+}
+.container .content .solBar .kutu .kutuIc .kutuSag{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container .content .solBar .kutu .kutuIc .kutuSag .kutuBaslik{
+    font-size: 20px;
+    font-family:Arial;
+    font-weight:bold;
+    
+    
+}
+.container .content .solBar .kutu .kutuIc .kutuSag .kutuContentBir{
+    font-size: 30px;
+    font-family:Arial;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 15px;
+
+}
+.container .content .solBar .kutu .kutuIc .kutuSag .kutuContentUc{
+    font-size: 30px;
+    font-family:Arial;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    
+
+}
+.container .content .solBar .kutu .kutuIc .kutuSag .kutuContentIki{
+    font-size: 30px;
+    font-family:Arial;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 15px;
+
+}
+.container .content .solBar .kutu .kutuIc .kutuSag .kutuContentDort{
+    font-size: 30px;
+    font-family:Arial;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.container .content .ortaBar{
+    margin-left:55px;
+    margin-top:35px;
+    margin-bottom: 5px;
+    display: grid;
+}
+.container .content .ortaBar .ortaKutu{
+    width: 650px;
+    height: 260px;
+    background-color: white;
+    font-size: 30px;
+    font-family:Arial; 
+    display: grid;   
+}
+.container .content .ortaBar .ortaKutu .ustVeriBaslik{
+    font-weight:bold;
+    margin-left: 10px;
+}
+.container .content .ortaBar .ortaKutu .ustVeriBilgi{
+    display: flex;
+    
+}
+.container .content .ortaBar .ortaKutu .ustVeriBilgi .futbolcuIsmi{
+    margin-left: 5px;
+    text-align: left;    
+}
+.container .content .ortaBar .ortaKutu .ustVeriBilgi .futbolcuMevki{
+   text-align: left;
+   margin-left:50px;
+} 
+.container .content .ortaBar .ortaKutu .ustVeriBilgi .futbolcuDeger{
+    text-align:left;
+    margin-left:100px;
+} 
+.container .content .ortaBar .ortaKutu .ustVeriBilgi .futbolcuIsmi .futbolcuVeriler{
+    margin-top: 20px;
+}
+.container .content .ortaBar .ortaKutu .ustVeriBilgi .futbolcuMevki .futbolcuVeriler{
+    margin-top: 20px;
+}
+.container .content .ortaBar .ortaKutu .ustVeriBilgi .futbolcuDeger .futbolcuVeriler{
+    margin-top: 20px;
+}
+
+
+
+.container .content .sagBar .kutuSag{
+    width: 350px;
+    height: 150px;
+    margin-left: 55px;
+    margin-top: 35px;
+    display:grid;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-family:Arial; 
+}
+
+.container .content .sagBar .kutuSag .ustVeriBaslik{
+    font-weight:bold;
+    margin-left: 10px;
+}
+.container .content .sagBar .kutuSag .ustVeriBilgi{
+    display: flex;
+    
+}
+.container .content .sagBar .kutuSag .ustVeriBilgi .futbolcuIsmi{
+    margin-left: 5px;
+    text-align: left;    
+}
+.container .content .sagBar .kutuSag .ustVeriBilgi .futbolcuTakim{
+   text-align: left;
+   margin-left:50px;
+}  
+.container .content .sagBar .kutuSag .ustVeriBilgi .futbolcuIsmi .futbolcuVeriler{
+    margin-top: 20px;
+}
+.container .content .sagBar .kutuSag .ustVeriBilgi .futbolcuTakim .futbolcuVeriler{
+    margin-top: 20px;
+}
+
+.container .content .sozlesmeTablo{
+    width: 850px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.container .content .futbolcularliste{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .content .futbolcularliste .resim{
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 25px;    
+}
+.container .content .liglerliste{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container .content .liglerliste .listebir .lig{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-bottom: 50px; 
+    
+}
+.container .content .girisFormu{
+    width: 500px;
+    height: 170px;
+    background-color:rgb(233, 255, 217);
+    margin: 50px;
+    font-size: 15pt;
+}
+.container .content .girisFormu .formici{
+    margin-left:20px;
+    line-height: 25px;
+    font-family: Arial;
+}
+.container .content .gonder{
+    width: 200px;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 110px;
+    background-color: tomato;
+    border:1px;
+    border-color: rgb(255, 235, 235);
+    border-style: solid;
+    border-radius: 20px;
+
+}
+.container .content .gonder .gonderici{
+    text-align: center;
+    margin-top:15px;
+}
+
+.container .content .hakkımızda{
+    width: 600px;
+    height: 500px;
+    
+    margin:auto;
+    font-family: Arial;
+}
+.container .content .hakkımızda .hakkımızdaici .baslikhakkımızda{
+    font-size: 45pt;
+    margin-left: 50pt;
+}
+.container .content .hakkımızda .hakkımızdaici .contenthakkımızda{
+    margin-left: 70pt;
+    margin-right: 50pt;
+    font-size: 15pt;
+    margin-top: 10pt;
+}

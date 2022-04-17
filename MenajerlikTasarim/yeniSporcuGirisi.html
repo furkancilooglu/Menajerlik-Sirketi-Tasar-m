@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rogon Menajerlik Şirketi</title>
+<meta charset="UTF-8"/>
+<meta name="Description" content="Rogon Menajerlik Şirketi Dashboard"/>
+<meta name="Keywords" content="Rogon, Menajerlik, Dashboard, Futbol, Futbolcu, Forvet, Defans, Orta Saha, Sözleşme"/>
+<meta name="robots" content="index,contact"/>
+<meta name="copyright" content="2020-2021 Copyright | rogonmenajerlik.com"/>
+<link href="reset.css" type="text/css" rel="stylesheet"/>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<script>
+    
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ustbar">
+            <a href="index.html"><img class="rogon" src="images/Logo.png"/></a>
+        </div> 
+        <div class="menubar">
+            <span class="panelLeft"><a href="index.html">Anasayfa</a></span>
+            <span class="panelLeft"><a href="sozlesmeler.html">Sözleşmeler</a></span>
+            <span class="panelLeft"><a href="sporcularımız.html">Sporcularımız</a></span>
+    
+            <span class="panelRight"><a href="ligler.html">Ligler</a></span>
+            <span class="panelRight"><a href="yeniSporcuGirisi.html">Yeni Sporcu Girişi</a></span>
+            <span class="panelRight"><a href="hakkımızda.html">Hakkımızda</a></span>
+    
+        </div>
+    
+        <div class="content">
+            <div class="girisFormu">
+                <div class="formici">
+                <form action="kontrol.php" method="POST">
+                    <fieldset>
+                        
+                        <legend>Yeni Sporcu Kayıt Formu</legend>
+                        
+                        <legend><label for="isim">Sporcu İsim Soyisim: </label>
+                        <input type="text" id="isim" name="isimm"/>
+                        </legend>
+                        
+                        <legend>
+                        <input type="radio" name="cinsiyet" value="erkek">Erkek
+                        <input type="radio" name="cinsiyet" value="kadın">Kadın
+                        <input type="radio" name="cinsiyet" value="belirsiz">Belirtmek İstemiyorum
+                        </legend>
+                        <legend>
+                        <label>Hangi Takımdan Geldi: </label>
+                        <input type="text" id="takim" name="takimm"/>
+                        </legend>
+                        
+                    
+                        <legend>
+                        <label>Lütfen Mevki Seçiniz </label>
+                        <select name="mevki">
+                        <option value="forvet">Forvet</option>
+                        <option value="ortasaha">Orta Saha</option>
+                        <option value="defans">Defans</option>
+                        <option value="kaleci">Kaleci</option>
+                        </select>
+                        </legend>
+                        <legend><label>Lütfen Resim Yükleyiniz</label>
+                        <input type="file" name="profilResmi">
+                        </legend>
+                    </fieldset>
+                </form>
+                </div>
+                
+
+
+            </div>
+            <div class="gonder">
+                <div class="gonderici">
+                <input type="submit"/>
+                </div>
+                    
+            </div>
+
+
+        </div>
+    </div>    
+</body> 
+</html>       
+        

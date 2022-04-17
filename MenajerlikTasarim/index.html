@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rogon Menajerlik Şirketi</title>
+<meta charset="UTF-8"/>
+<meta name="Description" content="Rogon Menajerlik Şirketi Dashboard"/>
+<meta name="Keywords" content="Rogon, Menajerlik, Dashboard, Futbol, Futbolcu, Forvet, Defans, Orta Saha, Sözleşme"/>
+<meta name="robots" content="index,contact"/>
+<meta name="copyright" content="2020-2021 Copyright | rogonmenajerlik.com"/>
+<link href="reset.css" type="text/css" rel="stylesheet"/>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+<script>
+    window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Burak Yılmaz Piyasa Değeri"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 0 },
+			{ y: 300000},
+			{ y: 500000},
+			{ y: 2200000},
+			{ y: 1000000},
+			{ y: 3000000 },
+			{ y: 7000000 },
+			{ y: 12500000 },
+			{ y: 4000000 },
+			{ y: 3000000 },
+			{ y: 3500000 },
+			{ y: 4500000 }
+		]
+	}]
+});
+chart.render();
+
+
+var chart2 = new CanvasJS.Chart("chartContainerDaire", {
+	exportEnabled: true,
+	animationEnabled: true,
+	title:{
+		text: "Futbolcularımızın Mevkiye Göre Dağılımı"
+	},
+	legend:{
+		cursor: "pointer",
+		itemclick: explodePie
+	},
+	data: [{
+		type: "pie",
+		showInLegend: true,
+		toolTipContent: "{name}: <strong>{y}%</strong>",
+		indexLabel: "{name} - {y}%",
+		dataPoints: [
+			{ y: 34, name: "Orta Saha", exploded: true },
+			{ y: 10, name: "Kaleci" },
+			{ y: 26, name: "Forvet" },
+			{ y: 30, name: "Defans" },
+		]
+	}]
+});
+chart2.render();
+
+
+function explodePie (e) {
+	if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+	} else {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+	}
+	e.chart2.render();
+}
+var chart3 = new CanvasJS.Chart("chartContainerUc", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Yıllık Ciro Değişimi"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 632000 },
+			{ y: 800000},
+			{ y: 520000, indexLabel: "en düşük",markerColor: "red", markerType: "triangle" },
+			{ y: 750000 },
+			{ y: 1200000 },
+			{ y: 1000000 },
+			{ y: 1500000 },
+		
+		]
+	}]
+});
+chart3.render();
+
+}
+
+
+
+</script>
+
+
+</head>
+
+<body>
+<div class="container">
+    <div class="ustbar">
+        <a href="index.html"><img class="rogon" src="images/Logo.png"/></a>
+    </div> 
+    <div class="menubar">
+        <span class="panelLeft"><a href="index.html">Anasayfa</a></span>
+        <span class="panelLeft"><a href="sozlesmeler.html">Sözleşmeler</a></span>
+        <span class="panelLeft"><a href="sporcularımız.html">Sporcularımız</a></span>
+
+        <span class="panelRight"><a href="ligler.html">Ligler</a></span>
+        <span class="panelRight"><a href="yeniSporcuGirisi.html">Yeni Sporcu Girişi</a></span>
+        <span class="panelRight"><a href="hakkımızda.html">Hakkımızda</a></span>
+
+    </div>
+
+    <div class="content">
+        <div class="solBar">
+            <div class="kutu">
+                <div class="kutuIc">
+                    <span class="sembol">
+                        <img class="sembolImg" src="images/top.png">
+                    </span>
+                    <div class="kutuSag">
+                        <span class="kutuBaslik">Sporcu Sayımız</span>
+                        <span class="kutuContentBir">158</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kutu">
+                <div class="kutuIc">
+                    <span class="sembol">
+                        <img class="sembolImg" src="images/avrupaharita.png">
+                    </span>
+                    <div class="kutuSag">
+                        <span class="kutuBaslik">Kaç Ligte Oyuncumuz Var</span>
+                        <span class="kutuContentUc">7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kutu">
+                <div class="kutuIc">
+                    <span class="sembol">
+                        <img class="sembolImg" src="images/dolar.png">
+                    </span>
+                    <div class="kutuSag">
+                        <span class="kutuBaslik">Total Yıllık Ciro</span>
+                        <span class="kutuContentIki">3.400.000 $</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kutu">
+                <div class="kutuIc">
+                    <span class="sembol">
+                        <img class="sembolImg" src="images/tarih.png">
+                    </span>
+                    <div class="kutuSag">
+                        <span class="kutuBaslik">Tarih</span>
+                        <span class="kutuContentDort">25.06.2021</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <div class="ortaBar">
+            <div class="ortaKutu">
+                <h1 class="ustVeriBaslik">Çıkışta Olan Futbolcular</h1>
+                <div class="ustVeriBilgi">
+                    <div class="futbolcuIsmi">
+                        <p class="futbolcuVeriler">- İrfan Can Kahveci</p>
+                        <p class="futbolcuVeriler">- Patrick Shick</p>
+                        <p class="futbolcuVeriler">- Doğan Alemdar</p>
+                        <p class="futbolcuVeriler">- Oliver Skipp</p>
+                    </div>
+                    <div class="futbolcuMevki">
+                        <p class="futbolcuVeriler">Orta Saha</p>
+                        <p class="futbolcuVeriler">Forvet</p>
+                        <p class="futbolcuVeriler">Kaleci</p>
+                        <p class="futbolcuVeriler">Orta Saha</p>
+                    </div>
+                    <div class="futbolcuDeger">
+                        <p class="futbolcuVeriler"> 11M$</p>
+                        <p class="futbolcuVeriler">23M$</p>
+                        <p class="futbolcuVeriler">2.40M$</p>
+                        <p class="futbolcuVeriler">10M$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ortaKutu">
+                <div id="chartContainer" style="width: 650px; height: 260px;"></div>  
+
+
+            </div>
+        </div>
+        <div class="sagBar">
+            <div class="kutuSag">
+                <div id="chartContainerDaire" style="width: 350px; height: 150px;"></div>
+            </div>
+            <div class="kutuSag">
+                <h1 class="ustVeriBaslik">Sözleşmesi Bitecek Futbolcular</h1>
+                <div class="ustVeriBilgi">
+                    <div class="futbolcuIsmi">
+                        <p class="futbolcuVeriler">- Memphis Depay</p>
+                        <p class="futbolcuVeriler">- Muhamed Tahirov</p>
+                        <p class="futbolcuVeriler">- Hugo Lloris</p>
+                        
+                    </div>
+                    <div class="futbolcuTakim">
+                        <p class="futbolcuVeriler">O.Lyon</p>
+                        <p class="futbolcuVeriler">Erzurumspor</p>
+                        <p class="futbolcuVeriler">Tottenham</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="kutuSag">
+                <div id="chartContainerUc">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+</body>
+
+
+</html>
